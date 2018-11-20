@@ -26,6 +26,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZQ-Bf-zlD">
                                 <rect key="frame" x="133.5" y="514" width="108" height="30"/>
                                 <state key="normal" title="Start Recording"/>
+                                <connections>
+                                    <action selector="microphoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W82-CE-QxG"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is the textview..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O3x-ug-ls6">
                                 <rect key="frame" x="67.5" y="223.5" width="240" height="240"/>
@@ -49,6 +52,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="microphoneButton" destination="BZQ-Bf-zlD" id="jXX-eo-dnJ"/>
+                        <outlet property="textView" destination="O3x-ug-ls6" id="JUj-7x-M6q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
