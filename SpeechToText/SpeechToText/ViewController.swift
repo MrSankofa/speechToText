@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Speech
 
 class ViewController: UIViewController {
+    
+    private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "en-US"))  //1
 
     
     @IBOutlet weak var textView: UITextView!
@@ -19,10 +22,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
     }
     
     
     @IBAction func microphoneTapped(_ sender: Any) {
+        print("Microphone button tapped")
     }
     
 }
